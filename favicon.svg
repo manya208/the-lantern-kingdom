@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9D2" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#FFD166" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#FF9E00" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF9E00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="50%" stop-color="#FFBE3D"/>
+      <stop offset="100%" stop-color="#F39C12"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E67E22"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="32" cy="33" r="28" fill="url(#lanternGlow)"/>
+
+  <!-- Top Handle Ring -->
+  <circle cx="32" cy="9" r="5" fill="none" stroke="#F59E0B" stroke-width="2.2"/>
+  
+  <!-- Lantern Top Cap -->
+  <path d="M 23 16 Q 32 12 41 16 L 39 19 Q 32 17 25 19 Z" fill="url(#capGrad)"/>
+  <rect x="26" y="14" width="12" height="2" rx="1" fill="#FCD34D"/>
+
+  <!-- Lantern Paper Body -->
+  <path d="M 24 19 Q 17 33 24 47 L 40 47 Q 47 33 40 19 Z" fill="url(#bodyGrad)" stroke="#D97706" stroke-width="1.2"/>
+
+  <!-- Internal Sun/Shield Emblem (Tangled Sun inspired + Security Shield) -->
+  <path d="M 32 23 L 34 27 L 38 27 L 35 30 L 36 34 L 32 32 L 28 34 L 29 30 L 26 27 L 30 27 Z" fill="#92400E" opacity="0.45"/>
+  <path d="M 32 27 Q 35 27 36 30 Q 36 34 32 37 Q 28 34 28 30 Q 29 27 32 27 Z" fill="#FEF08A" opacity="0.85"/>
+  
+  <!-- Subtle Lantern Ribs -->
+  <path d="M 32 19 L 32 47" stroke="#F59E0B" stroke-width="0.8" opacity="0.6"/>
+  <path d="M 28 20 Q 25 33 28 46" stroke="#F59E0B" stroke-width="0.7" opacity="0.5" fill="none"/>
+  <path d="M 36 20 Q 39 33 36 46" stroke="#F59E0B" stroke-width="0.7" opacity="0.5" fill="none"/>
+
+  <!-- Lantern Base Cap -->
+  <path d="M 25 47 Q 32 49 39 47 L 37 50 Q 32 52 27 50 Z" fill="url(#capGrad)"/>
+
+  <!-- Tassel / Sparkle -->
+  <path d="M 32 50 L 32 58" stroke="#F59E0B" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="32" cy="59" r="1.8" fill="#FDE047"/>
+  
+  <!-- Sparkles -->
+  <circle cx="16" cy="22" r="1.2" fill="#FEF08A" opacity="0.8"/>
+  <circle cx="48" cy="26" r="1.5" fill="#FEF08A" opacity="0.8"/>
+  <circle cx="45" cy="44" r="1.2" fill="#FEF08A" opacity="0.7"/>
+  <circle cx="18" cy="42" r="1.4" fill="#FEF08A" opacity="0.7"/>
+</svg>

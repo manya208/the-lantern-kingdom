@@ -1,0 +1,130 @@
+/**
+ * THE LANTERN KINGDOM - Theme & Color Variables
+ * Fairytale Tangled-inspired Day & Night color spaces
+ */
+
+:root {
+  /* Default Night Theme Variables */
+  --theme-transition: background-color 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+                      color 0.8s ease,
+                      border-color 0.8s ease,
+                      box-shadow 0.8s ease;
+  
+  /* Font Families */
+  --font-serif: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --font-subheading: 'Cormorant Garamond', Garamond, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', Menlo, Consolas, monospace;
+}
+
+/* =========================================================================
+   NIGHT THEME (Default - The Enchanted Lantern Night)
+   ========================================================================= */
+[data-theme="night"] {
+  --bg-core: #100D29;
+  --bg-deep-violet: #211447;
+  --bg-midnight-blue: #111B39;
+  --bg-surface: rgba(22, 16, 52, 0.72);
+  --bg-surface-elevated: rgba(33, 20, 71, 0.85);
+  --bg-surface-glass: rgba(17, 27, 57, 0.65);
+  --bg-card: rgba(25, 18, 59, 0.75);
+  --bg-card-hover: rgba(38, 25, 84, 0.88);
+  
+  /* Accent Colors */
+  --lantern-gold: #FFC66D;
+  --lantern-glow: rgba(255, 198, 109, 0.45);
+  --lantern-glow-strong: rgba(255, 198, 109, 0.8);
+  --lantern-amber: #F59E0B;
+  --royal-lavender: #BFA2FF;
+  --starlight-blue: #A9DCFF;
+  --fairytale-pink: #F472B6;
+  --enchanted-emerald: #34D399;
+  
+  /* Text & Readability */
+  --text-main: #F8F0FF;
+  --text-muted: #C8BEDC;
+  --text-dark: #8E82A8;
+  --text-accent: #FFD580;
+  
+  /* Borders & Glows */
+  --border-subtle: rgba(191, 162, 255, 0.18);
+  --border-active: rgba(255, 198, 109, 0.55);
+  --border-card: rgba(191, 162, 255, 0.22);
+  --shadow-magical: 0 10px 30px -5px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 198, 109, 0.15);
+  --shadow-glow: 0 0 30px rgba(255, 198, 109, 0.35);
+  
+  /* Environmental Gradients */
+  --sky-gradient: linear-gradient(180deg, #0A081D 0%, #111B39 40%, #211447 75%, #100D29 100%);
+  --sky-horizon: radial-gradient(ellipse at 50% 100%, rgba(33, 20, 71, 0.9) 0%, transparent 70%);
+  --forest-sil-1: #0A061C;
+  --forest-sil-2: #140E33;
+  --forest-sil-3: #1B1343;
+  --tower-shadow: #0C0822;
+  --tower-light: #FFD166;
+  --water-gradient: linear-gradient(180deg, rgba(16, 13, 41, 0.8) 0%, rgba(8, 6, 21, 0.95) 100%);
+  --water-reflection: radial-gradient(ellipse at 50% 0%, rgba(255, 198, 109, 0.3) 0%, transparent 65%);
+  --celestial-body: #F3E8FF;
+  --celestial-glow: rgba(191, 162, 255, 0.5);
+  --sun-rays-opacity: 0;
+  --stars-opacity: 0.9;
+  --fireflies-opacity: 0.85;
+  --butterflies-opacity: 0;
+  --pollen-opacity: 0.15;
+  --lanterns-opacity: 1;
+}
+
+/* =========================================================================
+   DAY THEME (The Golden Sunlit Kingdom)
+   ========================================================================= */
+[data-theme="day"] {
+  --bg-core: #FFF4E7;
+  --bg-deep-violet: #E8D9F9;
+  --bg-midnight-blue: #CCE4F8;
+  --bg-surface: rgba(255, 250, 243, 0.82);
+  --bg-surface-elevated: rgba(255, 255, 255, 0.92);
+  --bg-surface-glass: rgba(255, 245, 235, 0.75);
+  --bg-card: rgba(255, 248, 240, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  
+  /* Accent Colors */
+  --lantern-gold: #FF9E00;
+  --lantern-glow: rgba(255, 209, 102, 0.5);
+  --lantern-glow-strong: rgba(255, 180, 0, 0.7);
+  --lantern-amber: #D97706;
+  --royal-lavender: #7C3AED;
+  --starlight-blue: #0284C7;
+  --fairytale-pink: #DB2777;
+  --enchanted-emerald: #059669;
+  
+  /* Text & Readability */
+  --text-main: #302447;
+  --text-muted: #564771;
+  --text-dark: #7A6996;
+  --text-accent: #B45309;
+  
+  /* Borders & Glows */
+  --border-subtle: rgba(124, 58, 237, 0.15);
+  --border-active: rgba(245, 158, 11, 0.6);
+  --border-card: rgba(124, 58, 237, 0.18);
+  --shadow-magical: 0 10px 30px -5px rgba(48, 36, 71, 0.12), 0 0 25px rgba(255, 209, 102, 0.2);
+  --shadow-glow: 0 0 30px rgba(255, 209, 102, 0.4);
+  
+  /* Environmental Gradients */
+  --sky-gradient: linear-gradient(180deg, #A9DCFF 0%, #DCC8FF 45%, #FFE3C6 80%, #FFF4E7 100%);
+  --sky-horizon: radial-gradient(ellipse at 50% 100%, rgba(255, 227, 198, 0.8) 0%, transparent 70%);
+  --forest-sil-1: #254933;
+  --forest-sil-2: #376B4D;
+  --forest-sil-3: #528E69;
+  --tower-shadow: #4A3E61;
+  --tower-light: #FFF0A8;
+  --water-gradient: linear-gradient(180deg, rgba(169, 220, 255, 0.5) 0%, rgba(220, 200, 255, 0.6) 100%);
+  --water-reflection: radial-gradient(ellipse at 50% 0%, rgba(255, 209, 102, 0.45) 0%, transparent 65%);
+  --celestial-body: #FFD166;
+  --celestial-glow: rgba(255, 209, 102, 0.65);
+  --sun-rays-opacity: 0.75;
+  --stars-opacity: 0;
+  --fireflies-opacity: 0;
+  --butterflies-opacity: 0.85;
+  --pollen-opacity: 0.65;
+  --lanterns-opacity: 0.35;
+}
